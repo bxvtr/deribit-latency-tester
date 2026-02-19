@@ -1,7 +1,8 @@
 {
   "name": "deribit-latency-tester dev",
   "dockerComposeFile": [
-    "../docker-compose.yaml"
+    "../docker-compose.yaml",
+    "../docker-compose.override.yaml"
   ],
   "service": "app",
   "workspaceFolder": "/app",
