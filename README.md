@@ -34,25 +34,15 @@ A lightweight tool for measuring **Deribit WebSocket RPC round‑trip latency**,
 
 ```
 .
-├── Cargo.toml              # Project manifest: dependencies, metadata, build settings
-├── config.toml             # User-defined configuration loaded at runtime
-├── README.md               # Project documentation and usage instructions
-├── LICENSE                 # License information for the project
-├── rustfmt.toml            # Code formatting configuration for Rust
-├── .gitignore              # Specifies files Git should ignore
-├── docker-compose.yaml     # Docker Compose setup for running multi-service environments
-├── .devcontainer/
-│   ├── devcontainer.json   # VS Code Dev Container configuration
-│   └── dev.Dockerfile      # Dockerfile for the development environment
-├── .github/
-│   └── workflows/
-│       └── ci.yaml         # GitHub Actions workflow for CI
-└── src/
-    ├── config.rs           # Logic for loading and handling configuration values
-    ├── main.rs             # Application entry point
-    ├── deribit_client.rs   # Client implementation for interacting with Deribit API
-    ├── latency.rs          # Utilities for measuring and processing latency data
-    └── summary.rs          # Functions to generate and print application summaries
+├── docker-compose.override.yaml
+├── docker-compose.yaml
+├── Cargo.toml
+├── config.toml
+├── rustfmt.toml
+├── output/
+├── src/
+├── CONTRIBUTING.md
+└── README.md
 ```
 
 ---
