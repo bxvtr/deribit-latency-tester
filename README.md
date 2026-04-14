@@ -4,7 +4,7 @@
 [![Rust](https://img.shields.io/badge/Rust-stable-blue?logo=rust)]()
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)]()
 
-A lightweight tool for measuring **Deribit WebSocket RPC round‑trip latency**, including:
+A lightweight tool for measuring **[Deribit](https://docs.deribit.com/) WebSocket RPC round‑trip latency**, including:
 
 - Buy / Sell order latency  
 - Raw‑book tick‑aligned timestamps  
