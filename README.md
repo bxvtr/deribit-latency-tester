@@ -16,7 +16,7 @@ A lightweight tool for measuring **Deribit WebSocket RPC round‑trip latency**,
 
 ---
 
-# ✨ Features
+## ✨ Features
 
 - Single configuration file (`config.toml`)
 - Zero CLI arguments  
@@ -30,7 +30,7 @@ A lightweight tool for measuring **Deribit WebSocket RPC round‑trip latency**,
 
 ---
 
-# 📁 Project Structure
+## 📁 Project Structure
 
 ```
 .
@@ -47,7 +47,7 @@ A lightweight tool for measuring **Deribit WebSocket RPC round‑trip latency**,
 
 ---
 
-# ⚡ Running the Tool
+## ⚡ Running the Tool
 
 Clone this repo:
 
@@ -79,7 +79,7 @@ cargo run --release
 
 ---
 
-# 📊 Output
+## 📊 Output
 
 Latency samples are written to `output_latency_csv`, for example:
 
@@ -99,7 +99,7 @@ The sample CSV contains only synthetic data. Real trading data and order identif
 
 ---
 
-# 📈 Summary Statistics
+## 📈 Summary Statistics
 
 Example:
 
@@ -113,7 +113,7 @@ RTT (Send → Ack):
 
 ---
 
-# ⚙️ Configuration (`config.toml`)
+## ⚙️ Configuration (`config.toml`)
 
 All runtime behavior is controlled through this file.  
 Below is a complete explanation of all parameters.
@@ -160,7 +160,7 @@ If true, prints summary at the end.
 
 ---
 
-# 🧠 Raw‑Book Subscription & Tick‑Aligned Latency
+## 🧠 Raw‑Book Subscription & Tick‑Aligned Latency
 
 When `subscribe_raw_book = true`, the tool subscribes to:
 
@@ -179,7 +179,7 @@ This produces a more realistic latency profile for trading‑engine proximity te
 
 ---
 
-# 🧭 Timestamp Precision
+## 🧭 Timestamp Precision
 
 The tool uses multiple timestamp sources with different granularities:
 
@@ -213,7 +213,7 @@ All provided at **microsecond resolution**.
 
 ---
 
-# ⚠️ Error Handling & Failure Behavior
+## ⚠️ Error Handling & Failure Behavior
 
 ### WebSocket disconnects  
 If the WebSocket connection fails, `send_rpc()` returns an error → the program stops.  
