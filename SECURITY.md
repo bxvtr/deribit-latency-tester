@@ -7,8 +7,6 @@ Only the latest state of the `main` branch is actively maintained.
 Earlier commits, historical versions, and forks may not receive security fixes
 or vulnerability patches.
 
----
-
 ## Reporting a Vulnerability
 
 If a security issue is identified, **do not open a public GitHub issue**.
@@ -27,8 +25,6 @@ A vulnerability report should include:
 
 All reports are handled through responsible disclosure practices.
 
----
-
 ## Security Scope
 
 This repository provides a Rust-based tool for interacting with the Deribit WebSocket API and measuring RPC latency, including:
@@ -46,8 +42,6 @@ Primary security considerations include:
 - Safe file output for measurement data
 - Dependency vulnerabilities in async/networking crates
 
----
-
 ## Dependency Security
 
 - Dependencies are explicitly defined in `Cargo.toml`
@@ -55,8 +49,6 @@ Primary security considerations include:
 - Security-related dependency updates are prioritized
 
 CI is expected to catch build and compatibility issues.
-
----
 
 ## Responsible Usage
 
@@ -68,8 +60,6 @@ Users are responsible for:
 - Running the tool in secure environments
 
 This project does not manage account permissions, API key scopes, or infrastructure security.
-
----
 
 ## Disclosure Policy
 

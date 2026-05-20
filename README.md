@@ -14,9 +14,7 @@ A lightweight tool for measuring **[Deribit](https://docs.deribit.com/) WebSocke
 - No CLI — everything configured through `config.toml`  
 - Credentials provided strictly via environment variables
 
----
-
-## ✨ Features
+## Features
 
 - Single configuration file (`config.toml`)
 - Zero CLI arguments  
@@ -28,9 +26,7 @@ A lightweight tool for measuring **[Deribit](https://docs.deribit.com/) WebSocke
 - Full Docker + Devcontainer setup
 - CI workflow included
 
----
-
-## 📁 Project Structure
+## Project Structure
 
 ```
 .
@@ -45,9 +41,7 @@ A lightweight tool for measuring **[Deribit](https://docs.deribit.com/) WebSocke
 └── README.md
 ```
 
----
-
-## ⚡ Running the Tool
+## Running the Tool
 
 Clone this repo:
 
@@ -77,9 +71,7 @@ cargo build
 cargo run --release
 ```
 
----
-
-## 📊 Output
+## Output
 
 Latency samples are written to `output_latency_csv`, for example:
 
@@ -97,9 +89,7 @@ Includes:
 
 The sample CSV contains only synthetic data. Real trading data and order identifiers are never committed to this repository.
 
----
-
-## 📈 Summary Statistics
+## Summary Statistics
 
 Example:
 
@@ -111,9 +101,7 @@ RTT (Send → Ack):
 =========================================================
 ```
 
----
-
-## ⚙️ Configuration (`config.toml`)
+## Configuration (`config.toml`)
 
 All runtime behavior is controlled through this file.  
 Below is a complete explanation of all parameters.
@@ -158,9 +146,7 @@ Enable raw‑book subscription for tick‑aligned latency metrics.
 ### `print_summary`
 If true, prints summary at the end.
 
----
-
-## 🧠 Raw‑Book Subscription & Tick‑Aligned Latency
+## Raw‑Book Subscription & Tick‑Aligned Latency
 
 When `subscribe_raw_book = true`, the tool subscribes to:
 
@@ -177,9 +163,7 @@ It is used purely for **advanced latency analytics**:
 
 This produces a more realistic latency profile for trading‑engine proximity testing.
 
----
-
-## 🧭 Timestamp Precision
+## Timestamp Precision
 
 The tool uses multiple timestamp sources with different granularities:
 
@@ -211,9 +195,7 @@ Raw values from Deribit:
 
 All provided at **microsecond resolution**.
 
----
-
-## ⚠️ Error Handling & Failure Behavior
+## Error Handling & Failure Behavior
 
 ### WebSocket disconnects  
 If the WebSocket connection fails, `send_rpc()` returns an error → the program stops.  
