@@ -6,8 +6,6 @@ This project focuses on precise, reproducible measurement of WebSocket RPC laten
 
 The objective is a lightweight tool that produces realistic latency profiles without hidden logic or unintended side effects.
 
----
-
 ## Design Principles
 
 All changes must align with the following principles:
@@ -19,8 +17,6 @@ All changes must align with the following principles:
 - Explicit and predictable failure handling
 
 Avoid introducing magic defaults, uncontrolled concurrency, silent recovery logic, or non-transparent abstractions.
-
----
 
 ## Contribution Workflow
 
@@ -35,8 +31,6 @@ The Pull Request should clearly describe:
 - Architectural or measurement changes
 - Impact on latency precision, determinism, or stability
 
----
-
 ## Commit Conventions
 
 Use concise and technically descriptive commit messages:
@@ -45,8 +39,6 @@ feat: add tick-aligned latency correlation
 fix: handle websocket close edge case
 perf: reduce timestamp allocation overhead
 docs: clarify config.toml parameters
-
----
 
 ## Development Setup
 
@@ -67,8 +59,6 @@ Optional formatting and linting:
 cargo fmt
 cargo clippy
 ```
-
----
 
 ## Testing & Validation
 
